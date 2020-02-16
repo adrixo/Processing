@@ -8,7 +8,7 @@ void draw() {
   if (j == 255)
     j = 0;
   j++;
-  
+
   background(127);
   for (int i = 0; i < height; i += 50) {
     fill(129, 206, 15);

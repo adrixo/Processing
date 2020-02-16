@@ -7,7 +7,7 @@ void draw() {
   background(127);
   for (int i = 0; i < height; i += 50) {
     fill(129, 206, 15);
-    stroke();
+    stroke(2);
     rect(0, i, width, 10);
     fill(255);
     noStroke();

@@ -1,5 +1,5 @@
 void setup() {
-  size(1280, 720); 
+  size(1280, 720);
   stroke(255);
   noFill();
 }

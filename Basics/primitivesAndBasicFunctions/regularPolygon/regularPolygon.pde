@@ -4,21 +4,21 @@ void setup() {
 
 void draw() {
   background(102);
-  
+
   int mult = 2;
-  
+
   pushMatrix();
   translate(width*0.2, height*0.5);
   rotate(frameCount / 200.0);
-  polygon(0, 0, 82*mult, 3);  
+  polygon(0, 0, 82*mult, 3);
   popMatrix();
-  
+
   pushMatrix();
   translate(width*0.5, height*0.5);
   rotate(frameCount / 500.0);
-  polygon(0, 0, 80*mult, 20); 
+  polygon(0, 0, 80*mult, 20);
   popMatrix();
-  
+
   pushMatrix();
   translate(width*0.8, height*0.5);
   rotate(frameCount / -100.0);

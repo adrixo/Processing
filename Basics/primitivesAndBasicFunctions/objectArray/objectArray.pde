@@ -3,7 +3,7 @@ int count;
 Module[] mods;
 
 void setup() {
-  size(640, 360);
+  size(1280, 720);
   noStroke();
   int wideCount = width / unit;
   int highCount = height / unit;
@@ -19,7 +19,7 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  background(20,10,30);
   for (Module mod : mods) {
     mod.update();
     mod.display();
@@ -35,11 +35,19 @@ class Module {
   int xDirection = 1;
   int yDirection = 1;
   float speed;
+  int randomSize;
+  int randomColorR;
+  int randomColorG;
+  int randomColorB;
 
   // Contructor
   Module(int xOffsetTemp, int yOffsetTemp, int xTemp, int yTemp, float speedTemp, int tempUnit) {
     xOffset = xOffsetTemp;
     yOffset = yOffsetTemp;
+    randomSize = (int) random(30);
+    randomColorR = (int) random(255);
+    randomColorG = (int) random(255);
+    randomColorB = (int) random(255);
     x = xTemp;
     y = yTemp;
     speed = speedTemp;
@@ -62,7 +70,7 @@ class Module {
 
   // Custom method for drawing the object
   void display() {
-    fill(255);
-    ellipse(xOffset + x, yOffset + y, 6, 6);
+    fill(randomColorR, randomColorG, random(255));
+    ellipse(xOffset + x, yOffset + y, randomSize, randomSize);
   }
 }

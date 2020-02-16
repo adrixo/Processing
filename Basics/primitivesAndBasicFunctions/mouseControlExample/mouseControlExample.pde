@@ -8,7 +8,7 @@ void setup() {
 }
 
 void draw() {
-  
+
   background(0);
   y = y - 1;
   if (y < 0) {
@@ -17,7 +17,7 @@ void draw() {
   line(0, y, width, y);
 }
 
-void mousePressed() { 
+void mousePressed() {
   if (looping){
     drawRandomPoints();
     noLoop();
@@ -29,14 +29,13 @@ void mousePressed() {
 
 void drawRandomPoints() {
   stroke(255);
-  smooth();
   for (int i=0; i<30; i++){
     float rW = random(20);
     strokeWeight(rW);
     float rX = random(width/4);
     float rY = random(height/4);
-    point(mouseX-width/8 + rX, mouseY-height/8+rY); 
+    point(mouseX-width/8 + rX, mouseY-height/8+rY);
   }
-  
+
   strokeWeight(2);
 }

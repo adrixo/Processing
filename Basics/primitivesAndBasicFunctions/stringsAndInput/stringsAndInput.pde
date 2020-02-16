@@ -13,7 +13,7 @@ void draw() {
   text("Click on the program, then type to add to the String", 50, 150);
   text("Current key: " + letter, 50, 270);
   text("The String is " + words.length() +  " characters long", 50, 390);
-  
+
   textSize(60);
   text(words, 50, 620, 900, 300);
 }

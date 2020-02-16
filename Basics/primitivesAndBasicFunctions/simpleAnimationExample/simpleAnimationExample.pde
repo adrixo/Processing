@@ -8,7 +8,7 @@ void setup() {
 }
 
 void draw() {
-  
+
   background(0);
   y = y - 1;
   if (y < 0) {
@@ -17,10 +17,10 @@ void draw() {
   line(0, y, width, y);
 }
 
-void mousePressed() { 
+void mousePressed() {
   if (looping)
     noLoop();
-  else 
+  else
     loop();
   looping = !looping;
 }
